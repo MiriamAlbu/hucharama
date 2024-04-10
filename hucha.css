@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hucha-container {
+    position: relative;
+    margin: 20px 0;
+}
+
+#hucha {
+    width: 300px; /* Ancho de la imagen del cerdito */
+    height: auto; /* Altura automática para mantener la proporción */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Animación de tambaleo */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
